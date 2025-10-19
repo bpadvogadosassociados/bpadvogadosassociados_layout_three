@@ -100,12 +100,76 @@
             font-weight: 600;
         }
 
+        .main-content {
+            display: flex;
+            gap: 50px;
+            align-items: center;
+            justify-content: center;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
         .services-container {
             position: relative;
-            width: 100%;
-            max-width: 900px;
-            margin: 0 auto;
+            width: 700px;
             height: 700px;
+            flex-shrink: 0;
+        }
+
+        .video-section {
+            flex-shrink: 0;
+            width: 450px;
+        }
+
+        .video-card {
+            background: white;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.15);
+        }
+
+        .video-thumbnail {
+            position: relative;
+            width: 100%;
+            height: 550px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .video-thumbnail img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .play-button {
+            position: absolute;
+            width: 80px;
+            height: 80px;
+            background: rgba(255,255,255,0.9);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+
+        .play-button:hover {
+            transform: scale(1.1);
+            background: white;
+        }
+
+        .play-button::after {
+            content: '';
+            width: 0;
+            height: 0;
+            border-left: 25px solid #2c5f7f;
+            border-top: 15px solid transparent;
+            border-bottom: 15px solid transparent;
+            margin-left: 5px;
         }
 
         .diamond {
@@ -237,6 +301,15 @@
         }
 
         @media (max-width: 1200px) {
+            .main-content {
+                flex-direction: column;
+            }
+
+            .services-container {
+                width: 600px;
+                height: 600px;
+            }
+
             .sidebar {
                 position: static;
                 transform: none;
@@ -250,19 +323,24 @@
             }
 
             .services-container {
-                height: 600px;
+                width: 100%;
+                height: 500px;
+            }
+
+            .video-section {
+                width: 100%;
             }
 
             .diamond {
-                width: 200px;
-                height: 200px;
+                width: 180px;
+                height: 180px;
             }
 
             .diamond-content h3 {
-                font-size: 18px;
+                font-size: 16px;
             }
 
             .diamond-content p {
-                font-size: 12px;
+                font-size: 11px;
             }
         }
