@@ -1,0 +1,268 @@
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            color: #2c3e50;
+        }
+
+        header {
+            background: linear-gradient(90deg, #1a3a52 0%, #2c5f7f 100%);
+            padding: 20px 50px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .logo-icon {
+            width: 50px;
+            height: 50px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+        }
+
+        .logo h1 {
+            color: white;
+            font-size: 24px;
+            font-weight: 600;
+        }
+
+        nav {
+            display: flex;
+            gap: 30px;
+            align-items: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 16px;
+            transition: opacity 0.3s;
+        }
+
+        nav a:hover {
+            opacity: 0.8;
+        }
+
+        .cta-button {
+            background: #27ae60;
+            color: white;
+            padding: 12px 25px;
+            border-radius: 25px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .cta-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(39, 174, 96, 0.4);
+        }
+
+        .hero {
+            max-width: 1200px;
+            margin: 60px auto;
+            padding: 0 50px;
+        }
+
+        .hero-content {
+            text-align: center;
+            margin-bottom: 80px;
+        }
+
+        .hero-content h2 {
+            font-size: 48px;
+            color: #1a3a52;
+            margin-bottom: 20px;
+            line-height: 1.2;
+        }
+
+        .hero-content p {
+            font-size: 20px;
+            color: #5a6c7d;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .hero-content .highlight {
+            color: #2980b9;
+            font-weight: 600;
+        }
+
+        .services-container {
+            position: relative;
+            width: 100%;
+            max-width: 900px;
+            margin: 0 auto;
+            height: 700px;
+        }
+
+        .diamond {
+            position: absolute;
+            width: 280px;
+            height: 280px;
+            background: white;
+            transform: rotate(45deg);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+            transition: all 0.4s ease;
+            cursor: pointer;
+            overflow: hidden;
+        }
+
+        .diamond:hover {
+            transform: rotate(45deg) scale(1.05);
+            box-shadow: 0 15px 40px rgba(0,0,0,0.25);
+        }
+
+        .diamond-content {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%) rotate(-45deg);
+            text-align: center;
+            padding: 30px;
+            width: 100%;
+        }
+
+        .diamond-top {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%) rotate(45deg);
+        }
+
+        .diamond-bottom {
+            background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%) rotate(45deg);
+        }
+
+        .diamond-left {
+            background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+            top: 50%;
+            left: 0;
+            transform: translateY(-50%) rotate(45deg);
+        }
+
+        .diamond-right {
+            background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%);
+            top: 50%;
+            right: 0;
+            transform: translateY(-50%) rotate(45deg);
+        }
+
+        .diamond-content h3 {
+            color: white;
+            font-size: 22px;
+            margin-bottom: 12px;
+            font-weight: 600;
+        }
+
+        .diamond-content p {
+            color: rgba(255,255,255,0.95);
+            font-size: 14px;
+            line-height: 1.6;
+            margin-bottom: 15px;
+        }
+
+        .diamond-link {
+            display: inline-block;
+            color: white;
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: 600;
+            border-bottom: 2px solid white;
+            padding-bottom: 3px;
+            transition: opacity 0.3s;
+        }
+
+        .diamond-link:hover {
+            opacity: 0.8;
+        }
+
+        .sidebar {
+            position: fixed;
+            right: 40px;
+            top: 50%;
+            transform: translateY(-50%);
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.1);
+            text-align: center;
+            max-width: 250px;
+        }
+
+        .sidebar button {
+            background: #2c5f7f;
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            border-radius: 30px;
+            font-size: 16px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s;
+            margin-bottom: 15px;
+        }
+
+        .sidebar button:hover {
+            background: #1a3a52;
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(44, 95, 127, 0.4);
+        }
+
+        .rating {
+            margin-top: 15px;
+            color: #f39c12;
+            font-size: 18px;
+        }
+
+        .rating-text {
+            font-size: 14px;
+            color: #5a6c7d;
+            margin-top: 8px;
+        }
+
+        @media (max-width: 1200px) {
+            .sidebar {
+                position: static;
+                transform: none;
+                margin: 40px auto;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .hero-content h2 {
+                font-size: 32px;
+            }
+
+            .services-container {
+                height: 600px;
+            }
+
+            .diamond {
+                width: 200px;
+                height: 200px;
+            }
+
+            .diamond-content h3 {
+                font-size: 18px;
+            }
+
+            .diamond-content p {
+                font-size: 12px;
+            }
+        }
