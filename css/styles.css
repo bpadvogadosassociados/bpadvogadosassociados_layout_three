@@ -120,10 +120,10 @@
             overflow: hidden;
         }
 
-        .diamond:hover {
+        /* .diamond:hover {
             transform: rotate(45deg) scale(1.05);
             box-shadow: 0 15px 40px rgba(0,0,0,0.25);
-        }
+        } */
 
         .diamond-content {
             position: absolute;
