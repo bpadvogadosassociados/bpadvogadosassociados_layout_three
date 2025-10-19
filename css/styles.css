@@ -11,7 +11,7 @@
         }
 
         header {
-            background: linear-gradient(90deg, #1a3a52 0%, #2c5f7f 100%);
+            background: rgba(0, 0, 0, 0.7);
             padding: 20px 50px;
             display: flex;
             justify-content: space-between;
